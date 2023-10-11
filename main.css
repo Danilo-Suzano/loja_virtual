@@ -1,0 +1,140 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto,'sans-serif';
+}
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+.container-flex{
+    display: flex;
+}
+.menu > li {
+    float: left;
+    list-style: none;
+    position: relative;
+}
+
+li{
+    margin-left: 8px;
+}
+li a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #000;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header{
+    padding: 16px 0 0;
+    margin-bottom: 56px;
+}
+.sobre-a-loja img{
+    max-width: 400px;
+    margin-right: 24px;
+}
+section{
+    padding: 48px 0;
+}
+section h2{
+    margin-bottom: 16px;
+}
+h2{
+    border-bottom: 5px solid #ccc;
+}
+.lista-produtos{
+    flex-wrap: nowrap;
+}
+.lista-produtos img{
+    max-width: 80%;
+}
+.lista-produtos li{
+    list-style: none;
+    margin-bottom: 24px;
+    max-width: 80%;
+}
+button{
+    display: block;
+    width: 80%;
+    padding: 8px 0;
+    border: none;
+    background-color: blue;
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+}
+.price{
+    margin: 16px 0;
+    display: block;
+}
+
+/* Your existing CSS code */
+
+@media screen and (max-width: 640px) {
+    .container-flex {
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .sobre-a-loja img {
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 16px; 
+    }
+
+    .sobre-a-loja .conteudo {
+    text-align: center; 
+    }
+
+    .lista-produtos li {
+    width: 100%;
+    grid-template-columns: 2;
+    }
+
+    .lista-produtos img {
+    max-width: 100%; 
+    }
+}
+/* Your existing CSS code */
+
+@media screen and (min-width: 641px) and (max-width:1023px) {    
+
+    .container-flex {
+    flex-direction: column;
+    align-items: center;
+    }
+    
+    .sobre-a-loja img {
+    max-width: 100%; 
+    margin-right: 0; 
+    margin-bottom: 16px; 
+    }
+    
+    .sobre-a-loja .conteudo {
+    text-align: center; 
+    }
+    .lista-produtos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .lista-produtos li {
+    width: 50%; 
+    margin-bottom: 16px;
+    }
+    
+    .lista-produtos img {
+    max-width: 100%; 
+    }
+}
